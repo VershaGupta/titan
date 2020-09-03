@@ -1,0 +1,25 @@
+@import "../../assets/scss/Variables.scss";
+.custom-label {
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin: 0 0 0.625rem 0;
+  i {
+    &.icon {
+      margin-left: 0.5rem !important;
+      color: $blue-bright;
+      font-size: 1rem;
+    }
+  }
+  & > span,
+  label {
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin: 0 0 0.625rem 0;
+  }
+}
+.switcher-tooltip {
+  margin-bottom: 1rem;
+  .custom-label {
+    margin-bottom: 0;
+  }
+}

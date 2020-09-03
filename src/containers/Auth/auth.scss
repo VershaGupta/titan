@@ -1,0 +1,121 @@
+@import "../../assets/scss/Variables.scss";
+.left-panel {
+  height: 100vh;
+  padding: 50px;
+  @media only screen and (max-width: 768px) {
+    height: auto;
+    margin-bottom: 2.5rem;
+    padding: 50px 20px;
+    max-width: 100%;
+  }
+  position: relative;
+  &.login-screen {
+    color: $white;
+    background-color: $blue-darkest;
+    background-repeat: no-repeat;
+    background-position: center 50vh;
+    background-size: 80%;
+    
+  }
+  &.share-buttons {
+    background-color: $gray-lightest;
+    color: $black;
+  }
+  .message {
+    padding-top: 150px;
+    @media only screen and (max-width: 768px) {
+      padding-top: 50px;
+    }
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 14px;
+    color: $text-muted;
+    padding-right: 100px;
+    padding-top: 20px;
+    line-height: 24px;
+    @media only screen and (max-width: 768px) {
+      padding-right: 0;
+    }
+  }
+}
+.logo {
+  img {
+    // width: 126px;
+    height: 31px;
+  }
+}
+.form-block {
+  background-color: $white;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.signup-form {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 400px;
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 50px;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $black;
+    margin-bottom: 20px;
+  }
+  p {
+    color: $text-muted;
+    margin-bottom: 50px;
+  }
+  a {
+    color: $blue-bright;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+}
+.seprator {
+  margin: 0em 0;
+  text-align: center;
+  position: relative;
+  height: 46px;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    background: $gray-light;
+    position: absolute;
+    top: 23px;
+    left: 0;
+    right: 0;
+  }
+  div {
+    background-color: $white;
+    width: 3.286rem;
+    height: 3.286rem;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+  }
+}
+.ui {
+  &.button {
+    &.google,
+    &.github {
+      background-color: $white;
+      border: 1px solid $gray-light;
+      &:hover {
+        border-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+    img {
+      margin-right: 5px;
+    }
+  }
+}

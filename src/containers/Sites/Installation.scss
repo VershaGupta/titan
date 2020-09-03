@@ -1,0 +1,211 @@
+@import "../../assets/scss/Variables.scss";
+.get-code {
+  header {
+    height: 60px;
+    border-bottom: 1px solid $gray-light;
+    padding: 0 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    background-color: $white;
+    .logo {
+      position: relative;
+      top: 0;
+      left: 0;
+      img {
+        // width: 126px;
+        height: 31px;
+      }
+    }
+    & ~ section {
+      padding-top: 90px;
+      .content {
+        h2 {
+          font-size: 1.714rem;
+        }
+      }
+    }
+  }
+  nav {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      height: 60px;
+      li {
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+        a {
+          color: $gray-dark;
+          &:hover {
+            color: $blue-bright;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .body-tag {
+    color: $blue-bright;
+  }
+}
+
+.code-steps {
+  position: relative;
+  padding: 0 1rem 0 3.5rem;
+  margin: 2rem 0 0;
+  list-style: none;
+  @media only screen and (max-width: 768px) {
+    margin: 0;
+  }
+}
+
+.code-steps__item {
+  position: relative;
+  min-height: 75px;
+  counter-increment: list;
+  padding-left: 1rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -1.7rem;
+    top: 26px;
+    height: calc(100% + 17px);
+    width: 2px;
+    border-left: 2px solid $blue-light;
+  }
+  &:after {
+    content: counter(list);
+    position: absolute;
+    top: 0;
+    left: -3.1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $blue-light;
+    color: $gray-dark;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid $blue-light;
+  }
+  //Hide border for Last Step
+  &:last-child {
+    &:before {
+      border: none;
+    }
+  }
+  //Completed
+  &.code-steps__item--completed {
+    &:after {
+      font-weight: 400;
+      background: $blue-light;
+    }
+  }
+  //Active
+  &.code-steps__item--active {
+    &:after {
+      background: $blue-light;
+    }
+  }
+}
+
+.code-steps__title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  line-height: 2.9rem;
+}
+.code-steps__subtitle {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  line-height: 2.4rem;
+}
+.code-steps__info {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 25px;
+  }
+  code {
+    padding: 0 5px;
+    background-color: $gray-lightest;
+  }
+}
+.installation-tab {
+  background: $white;
+  border: 1px solid $gray-medium;
+  @media only screen and (max-width: 768px) {
+    border: 0;
+    background-color: $transparent;
+  }
+  .ui {
+    &.vertical {
+      &.tabular {
+        &.menu {
+          border-right: none;
+          @media only screen and (max-width: 768px) {
+            background-color: $white;
+          }
+          .item {
+            text-transform: capitalize;
+            letter-spacing: 0;
+            font-size: 1rem;
+            border-left: 2px solid $white !important;
+            padding: 0.7143rem 1.42857143em;
+            line-height: 26px;
+            transition: all 0.3s;
+            &.active,
+            &:hover {
+              color: $blue-bright;
+              border: none;
+              background-color: rgba(47, 85, 212, 0.05);
+              border-radius: 0 !important;
+              border-left: 2px solid $blue-bright !important;
+            }
+          }
+        }
+      }
+    }
+    &.grid {
+      margin: 0;
+      .wide {
+        &.column {
+          padding: 0;
+        }
+      }
+      .stretched {
+        &.column {
+          padding-left: 0;
+        }
+      }
+    }
+    &.attached {
+      &.segment {
+        border-color: #d4d4d5;
+        border-style: solid;
+        border-width: 0 1px 0 1px;
+        border-radius: 0;
+        @media only screen and (max-width: 768px) {
+          border: 0;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+ul.code-steps.wordpress li:nth-child(2):before,
+ul.code-steps.wordpress li:nth-child(2):after,
+ul.code-steps.wordpress li:nth-child(3):before,
+ul.code-steps.wordpress li:nth-child(3):after,
+ul.code-steps.html li:nth-child(3):before,
+ul.code-steps.html li:nth-child(3):after {
+  display: none;
+}

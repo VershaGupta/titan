@@ -1,0 +1,13 @@
+@import "../../assets/scss/Variables.scss";
+.ui {
+  &.green {
+    &.button {
+      &.info-btn {
+        background-color: transparent;
+        color: $blue-bright;
+        text-decoration: underline;
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../font/icomoon.eot?1qfb8o");
+  src: url("../font/icomoon.eot?1qfb8o#iefix") format("embedded-opentype"),
+    url("../font/icomoon.ttf?1qfb8o") format("truetype"), url("../font/icomoon.woff?1qfb8o") format("woff"),
+    url("../font/icomoon.svg?1qfb8o#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.ui [class^="s9icon"],
+.ui [class*=" s9icon"],
+[class^="s9icon"],
+[class*=" s9icon"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.s9iconuser:before {
+  content: "\e91c";
+}
+.s9iconcomment:before {
+  content: "\e91b";
+}
+.s9iconalign-left:before {
+  content: "\e914";
+}
+.s9iconbug-outline:before {
+  content: "\e915";
+}
+.s9icondocuments:before {
+  content: "\e916";
+}
+.s9iconhome:before {
+  content: "\e917";
+}
+.s9iconhourglass-outline:before {
+  content: "\e918";
+}
+.s9iconlink:before {
+  content: "\e919";
+}
+.s9icontool:before {
+  content: "\e91a";
+}
+.s9iconvkontakte:before {
+  content: "\e90a";
+}
+.s9iconsocial9:before {
+  content: "\e90b";
+}
+.s9iconevernote:before {
+  content: "\e90c";
+}
+.s9iconmyspace:before {
+  content: "\e90d";
+}
+.s9iconbuffer:before {
+  content: "\e90e";
+}
+.s9iconcross:before {
+  content: "\e909";
+}
+.s9iconipad:before {
+  content: "\e907";
+}
+.s9icongear:before {
+  content: "\e908";
+}
+.s9icondesign:before {
+  content: "\e901";
+}
+.s9iconposition:before {
+  content: "\e905";
+}
+.s9iconsharecount:before {
+  content: "\e906";
+}
+.s9iconrules:before {
+  content: "\e900";
+}
+.s9iconmagicwand:before {
+  content: "\e902";
+}
+.s9icondesktop:before {
+  content: "\e903";
+}
+.s9iconmobile:before {
+  content: "\e904";
+}
+
+/* special icons */
+.vkontakte:before,
+.social9:before,
+.evernote:before,
+.myspace:before,
+.buffer:before,
+.line:before,
+.yahoomail:before,
+.googlebookmarks:before,
+.pocket:before,
+.gmail:before {
+  font-family: "icomoon" !important;
+  font-size: 20px;
+}
+.vkontakte:before {
+  content: "\e90a";
+}
+.social9:before {
+  content: "\e90b";
+}
+.evernote:before {
+  content: "\e90c";
+}
+.myspace:before {
+  content: "\e90d";
+}
+.buffer:before {
+  content: "\e90e";
+}
+.line:before {
+  content: "\e90f";
+}
+.yahoomail:before {
+  content: "\e910";
+}
+.googlebookmarks:before {
+  content: "\e911";
+}
+.pocket:before {
+  content: "\e912" !important;
+}
+.gmail:before {
+  content: "\e913";
+}

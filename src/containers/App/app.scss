@@ -1,0 +1,8 @@
+.msg-no-network {
+  position: absolute !important;
+  top: 0 !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  transition: ease-in-out 500ms;
+  z-index: 1000;
+}

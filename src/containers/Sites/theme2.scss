@@ -1,0 +1,19 @@
+.tt-icons-li {
+  display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+.tt-icons-li-a-label{
+  display: none;
+}
+.tt-icons-li-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tt-icons-li-a svg{
+  width: 60%;
+    height: 60%;
+    fill: rgba(40, 40, 43, 0.6);
+}

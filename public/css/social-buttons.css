@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-half {
+  padding: 80px 24px;
+}
+.title-heading {
+  text-align: center;
+}
+.para-desc {
+  margin: 0 auto;
+}
+.main {
+  padding-bottom: 80px;
+}
+.m-0 {
+  margin: 0;
+}
+h2 {
+  letter-spacing: 0.5px;
+  font-size: 30px;
+  margin: 80px 0 0;
+}
+.social-buttons-grid {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.social-buttons-grid > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social-buttons-grid > div a {
+  flex-grow: 1;
+  margin-right: 30px;
+  margin-top: 50px;
+  width: calc(20% - 30px);
+  text-align: center;
+  text-decoration: none;
+}
+.social-buttons-grid > div a:nth-child(5n) {
+  margin-right: 0;
+}
+.social-buttons-grid > .grid-25 > div {
+  flex-grow: 1;
+  margin-right: 30px;
+  margin-top: 50px;
+  width: calc(25% - 30px);
+  padding: 10px 30px 30px;
+  text-decoration: none;
+  color: #161c2d;
+}
+.social-buttons-grid > .grid-25 > div h3 {
+  font-size: 22px;
+}
+.social-buttons-grid > .grid-25 > div:nth-child(4n) {
+  margin-right: 0;
+}
+.social-buttons-grid > .grid-25 > div a {
+  color: #161c2d;
+  display: flex;
+  width: fit-content;
+  text-align: left;
+  margin-top: 30px;
+}
+.social-buttons-grid > .grid-25 > div a svg {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.svg-wrapper {
+  padding: 15px 0;
+}
+.svg-wrapper svg {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  padding: 15px 0;
+}
+.svg-wrapper svg path {
+  fill: #fff;
+}
+span.button-text {
+  padding: 20px;
+  display: block;
+  color: #161c2d;
+}
+
+.facebook {
+  background-color: #3d5a96;
+}
+.twitter {
+  background-color: #55acee;
+}
+.LinkedIn {
+  background-color: #4393cc;
+}
+.Pinterest {
+  background-color: #cb2128;
+}
+.Reddit {
+  background-color: #ff5700;
+}
+.Digg {
+  background-color: #221e1e;
+}
+
+.Blogger {
+  background-color: #191919;
+}
+
+.Evernote {
+  background-color: #7fce2c;
+}
+
+.Telegram {
+  background-color: #0088cc;
+}
+.WhatsApp {
+  background-color: #4dc247;
+}
+@media (max-width: 767px) {
+  .social-buttons-grid > div a {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.social-buttons-grid.fb-share > div a {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.footer-btn {
+  width: 200px;
+  margin: 10px auto 0 auto !important;
+}
+.text-center {
+  text-align: center;
+}
+.p-80 {
+  padding: 80px 0;
+}
+.warning {
+  color: #ed4c78;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-unstyled li {
+  line-height: 40px;
+}
+
+.social-buttons-grid.fb-share .svg-wrapper {
+  padding: 0;
+}
+.social-buttons-grid.fb-share .svg-wrapper svg {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  padding: 10px 0;
+}
+.social-buttons-grid.fb-share > div a {
+  text-align: left;
+}
+.social-buttons-grid.fb-share span.button-text {
+  padding: 13px 16px;
+}
+.social-buttons-grid.fb-share .grid-25 h3,
+.social-buttons-grid.fb-share .grid-25 p {
+  margin: 1rem 0 !important;
+}
+.social-buttons-grid.fb-share .grid-25 a {
+  margin-top: 30px;
+  margin-bottom: 0;
+}

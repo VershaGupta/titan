@@ -1,0 +1,39 @@
+stages:
+    - build
+    - deploy
+
+# Build Start
+build:
+    stage: build
+    image: node:10.15
+    tags: 
+      - gitlab-org-docker
+    script:
+      - export REACT_APP_V2JS='https://s3.us-east-2.amazonaws.com/devauth.loginradius.org/LoginRadiusV2.js' 
+      - npm install
+      - CI=false npm run build
+    artifacts:
+      paths:
+        - build/
+      expire_in: 1 day
+    rules:
+      - if: '$CI_COMMIT_BRANCH == "dev"'
+        when: always
+
+#Deploy start
+deploy:
+    stage: deploy
+    image: "python:latest"
+    tags: 
+      - gitlab-org-docker
+    before_script:
+      - pip install awscli # Install the SDK
+      - export AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+      - export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
+    script:
+      - aws s3 sync build s3://${AWS_BUCKET_NAME} --acl public-read
+    environment:
+      name: dev
+    rules:
+      - if: '$CI_COMMIT_BRANCH == "dev"'
+        when: always
